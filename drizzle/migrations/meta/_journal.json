@@ -1,0 +1,174 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794662224559,
+      "tag": "0000_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794666575624,
+      "tag": "0001_cadastros_importacao_seguranca",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794670972387,
+      "tag": "0002_comercial_propostas_pedidos",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794678832230,
+      "tag": "0003_midia_ooh_pontos",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794679700373,
+      "tag": "0004_bissemanas_ocupacao",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794694049432,
+      "tag": "0005_restringir_acesso_membros",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794695660677,
+      "tag": "0006_sige_importacao_campos_calendario",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1794696438707,
+      "tag": "0007_sige_chave_importacao_midia",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1794700713209,
+      "tag": "0008_financeiro",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1794710355095,
+      "tag": "0009_historico_comercial_sige",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1794710424279,
+      "tag": "0010_importar_historico_comercial_sige",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1794765051178,
+      "tag": "0011_criar_recursos_producao",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1794765069522,
+      "tag": "0012_criar_ordens_producao",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1794765087804,
+      "tag": "0013_salvar_e_acompanhar_ordens",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1794767405394,
+      "tag": "0014_criar_planejamento_operacional",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1794767431268,
+      "tag": "0015_proteger_agendamentos_e_reservas",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1794769493539,
+      "tag": "0016_criar_equipes_planejamento",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1794770165278,
+      "tag": "0017_remove_first_user_admin",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1794770242008,
+      "tag": "0018_harden_role_checks_and_media",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1794771359640,
+      "tag": "0019_programacao_servicos",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1794773445275,
+      "tag": "0020_catalogos_e_imagens_planejamento",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1794773788420,
+      "tag": "0021_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1794775270865,
+      "tag": "0022_completar_planejamento_veiculos_catalogos",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1794784537693,
+      "tag": "0023_confirmar_conflitos_programacao",
+      "breakpoints": true
+    }
+  ]
+}

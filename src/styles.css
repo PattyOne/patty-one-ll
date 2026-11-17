@@ -1,0 +1,85 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--text-primary));
+  --color-surface: hsl(var(--surface));
+  --color-surface-elevated: hsl(var(--surface-elevated));
+  --color-text-primary: hsl(var(--text-primary));
+  --color-text-secondary: hsl(var(--text-secondary));
+  --color-card: hsl(var(--surface));
+  --color-card-foreground: hsl(var(--text-primary));
+  --color-popover: hsl(var(--surface));
+  --color-popover-foreground: hsl(var(--text-primary));
+  --color-primary: hsl(var(--primary));
+  --color-primary-hover: hsl(var(--primary-hover));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--surface-elevated));
+  --color-secondary-foreground: hsl(var(--text-primary));
+  --color-muted: hsl(var(--surface-elevated));
+  --color-muted-foreground: hsl(var(--text-secondary));
+  --color-accent: hsl(var(--accent));
+  --color-accent-hover: hsl(var(--accent-hover));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+  --color-danger: hsl(var(--danger));
+  --color-destructive: hsl(var(--danger));
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--border));
+  --color-ring: hsl(var(--primary));
+  --color-sidebar-surface: hsl(var(--sidebar-bg));
+  --color-sidebar-elevated: hsl(var(--sidebar-elevated));
+  --color-sidebar-border: hsl(var(--sidebar-border-c));
+  --color-sidebar-text: hsl(var(--sidebar-text));
+  --color-sidebar-text-secondary: hsl(var(--sidebar-text-secondary));
+  --color-sidebar-active: hsl(var(--sidebar-active-bg));
+  --color-overlay: hsl(222 47% 5%);
+  --color-brand-deep: hsl(217 89% 22%);
+}
+
+:root {
+  --background: 214 30% 95%; --surface: 0 0% 100%; --surface-elevated: 214 32% 97%;
+  --border: 214 32% 91%; --text-primary: 222 47% 11%; --text-secondary: 215 16% 47%;
+  --primary: 217 89% 38%; --primary-hover: 217 89% 31%; --primary-foreground: 0 0% 100%;
+  --accent: 25 95% 53%; --accent-hover: 25 95% 46%; --accent-foreground: 222 47% 11%;
+  --success: 142 71% 45%; --warning: 38 92% 50%; --danger: 0 72% 51%;
+  --radius: 1rem;
+  --sidebar-bg: 217 89% 38%; --sidebar-elevated: 217 89% 31%; --sidebar-border-c: 217 60% 32%;
+  --sidebar-text: 0 0% 100%; --sidebar-text-secondary: 214 100% 92%; --sidebar-active-bg: 217 89% 28%;
+}
+.dark {
+  --background: 222 47% 7%; --surface: 222 40% 11%; --surface-elevated: 222 40% 14%;
+  --border: 217 32% 20%; --text-primary: 210 40% 98%; --text-secondary: 215 20% 65%;
+  --primary: 217 91% 55%; --primary-hover: 217 91% 48%; --primary-foreground: 222 47% 7%;
+  --accent: 25 95% 53%; --accent-hover: 25 95% 46%; --accent-foreground: 222 47% 7%;
+  --sidebar-bg: 222 40% 11%; --sidebar-elevated: 222 40% 16%; --sidebar-border-c: 217 32% 20%;
+  --sidebar-text: 210 40% 98%; --sidebar-text-secondary: 215 20% 65%; --sidebar-active-bg: 217 91% 55%;
+}
+
+@utility bg-sidebar-surface { background-color: hsl(var(--sidebar-bg)); }
+@utility bg-sidebar-elevated { background-color: hsl(var(--sidebar-elevated)); }
+@utility border-sidebar { border-color: hsl(var(--sidebar-border-c)); }
+@utility text-sidebar-primary { color: hsl(var(--sidebar-text)); }
+@utility text-sidebar-secondary { color: hsl(var(--sidebar-text-secondary)); }
+@utility bg-sidebar-text { background-color: hsl(var(--sidebar-text)); }
+@utility bg-sidebar-active { background-color: hsl(var(--sidebar-active-bg)); }
+@utility shadow-floating { box-shadow: 0 10px 30px -12px hsl(var(--text-primary) / 0.25), 0 2px 6px -2px hsl(var(--text-primary) / 0.08); }
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { font-family: var(--font-sans); }
+  body { background-color: var(--color-background); color: var(--color-foreground); -webkit-font-smoothing: antialiased; }
+}

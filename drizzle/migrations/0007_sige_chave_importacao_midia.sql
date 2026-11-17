@@ -1,0 +1,1 @@
+ALTER TABLE public.pontos_midia ADD CONSTRAINT pontos_midia_id_sige_key UNIQUE(id_sige);
